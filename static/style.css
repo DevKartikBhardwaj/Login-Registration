@@ -1,0 +1,109 @@
+body {
+    background: url(../static/images/3.jpg) no-repeat center;
+    background-size: cover;
+    /* border: 2px solid red; */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-Block {
+    border: 2px solid white;
+    width: 50%;
+    /* height: 66.78%; */
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #39a2f573;
+    border-radius: 1.5em;
+    box-sizing: border-box;
+}
+
+#register-img {
+    border-bottom-left-radius: 1.5em;
+    border-top-left-radius: 1.4em;
+    height: 100%;
+    width: 100%;
+}
+
+.block-left {
+    width: 50%;
+}
+
+.block-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 2em 1em;
+}
+
+.block-right>p,
+.block-right>h2 {
+    margin: 0.5em auto;
+    margin-bottom: 1em;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-form>label {
+    margin-bottom: 0.25em;
+    cursor: pointer;
+}
+
+.r-input {
+    margin-bottom: 1.25em;
+    outline: none;
+    border: none;
+    padding: 0.5em;
+    border-radius: 0.2em;
+
+}
+
+
+
+/* css for login form */
+
+#login-left {
+    padding: 1em;
+}
+
+
+
+
+
+/* //utility classes */
+
+.primary-btn {
+    padding: 0.35em;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    font-weight: bold;
+    color: white;
+    border-radius: 0.2em;
+}
+
+
+
+/* Media-queries for registration form */
+
+@media (max-width:911px) {
+    .block-left {
+        display: none;
+    }
+
+    .block-right {
+        width: 100%;
+    }
+}
+
+@media (max-width:610px) {
+    .main-Block {
+        width: 80%;
+    }
+}
